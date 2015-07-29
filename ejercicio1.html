@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta CHARSET="UTF-8">
+	<title>Hola!</title>
+	<style>
+		/*reset*/
+		html, body, div, span, object, iframe,
+		h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+		abbr, address, cite, code,
+		del, dfn, em, img, ins, kbd, q, samp,
+		small, strong, sub, sup, var,
+		b, i,
+		dl, dt, dd, ol, ul, li,
+		fieldset, form, label, legend,
+		table, caption, tbody, tfoot, thead, tr, th, td,
+		article, aside, canvas, details, figcaption, figure, 
+		footer, header, hgroup, menu, nav, section, summary,
+		time, mark, audio, video {
+		margin:0;
+		padding:0;
+		border:0;
+		outline:0;
+		font-size:100%;
+		vertical-align:baseline;
+		background:transparent;
+		}
+		/*clearfix*/
+		 .clearfix:after {
+		content: ".";
+		display: block;
+		clear: both;
+		visibility: hidden;
+		line-height: 0;
+		height: 0;
+		}
+		.clearfix {
+		display: inline-block;
+		}
+		html[xmlns] .clearfix {
+		display: block;
+		}
+		* html .clearfix {
+		height: 1%;
+		}
+		html{
+			font-family: Arial;
+			/*acá estaba mal escrito*/
+			margin: 0;
+
+		}
+		#header {
+			font-size: 2em;
+			margin-bottom: 30px;
+			background: yellow;
+		}
+		#contenedor {
+			background: red;
+			padding: 10px 5%;
+			width: 90%;
+			/*width teniendo cuenta el padding de 5%*/
+			position:absolute;
+		}
+		#contenedor .izquierda {
+			float: left;
+			color: white;
+			background: blue;
+			width: 42.5%;
+		}
+		#contenedor .derecha {
+			float: right;
+			text-align: right;
+			/*text align right  para que coincida con la palabra y no sea paradójico visualmente XD*/
+			color: white;
+			background: blue;
+			width: 42.5%;
+		}
+		#footer {
+			font-size: 0.5em;
+			margin-top: 30px;
+			background: cyan;
+			position:absolute;
+			bottom: 0px;
+			/*para que quede abajo*/
+			width: 100%;
+		}
+	</style>
+</head>
+<body>
+
+	<div id="header">
+		Arriba!
+	</div>
+
+	<div id="contenedor" class="clearfix">
+		<div class="izquierda">Izquierda!</div>
+		<div class="derecha">Derecha!</div>
+	</div>
+
+	<div id="footer">
+		Abajo!
+	</div>
+	
+</body>
+</html>
